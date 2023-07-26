@@ -1,0 +1,152 @@
+body{
+  font-family: Arial, sans-serif;
+}
+
+navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: #81C1BD;
+}
+
+navbar p{
+color: whitesmoke;
+font-weight: 700;
+}
+
+h1,h2,h3,p{
+  color: #375753;
+}
+
+
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
+.reg-side {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.registr-form {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.symptom-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.symptom-div h1{
+  text-align: center;
+}
+
+.symptom-div form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.about-div p{
+  margin-bottom: 15px;
+}
+
+.about-div h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+li::before { 
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+/* media-queries */
+
+@media (max-width: 576px) {
+  .container {
+    width: 320px;
+    padding: 10px;
+  }
+  .symptom-div {
+  width: 300px;
+}
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 600px;
+  }
+  .symptom-div {
+  width: 500px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 600px;
+  }
+  .symptom-div {
+  width: 600px;
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+
+  .about-div{
+    width: 800px;
+  }
+  
+}
